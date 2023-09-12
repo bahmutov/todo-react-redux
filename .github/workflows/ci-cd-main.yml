@@ -1,5 +1,8 @@
-name: ci
-on: [push]
+name: CI/CD pineline for main branch
+on: 
+  [push]:
+    branches:
+      - main
 jobs:
   test:
     # use the reusable workflow to check out the code, install dependencies
